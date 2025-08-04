@@ -106,5 +106,59 @@ Geralmente usam frameworks
 
 1.5 Linguagens de Domínio Específico
 
+(04/08/2025)
+1.6 Compiladores e Interpretadores
+
+Existem dois métodos na tradução de códigos escritos em alto nível para a linguagem da máquina: 
+1) Compiladores
+2) Interpretadores
+
+  1.6.1 Compiladores: 
+    Recebe como entrada um programa em uma linguagem de programação e o traduz em um programa equivalente em outra linguagem.
+    linguagem fonte -> compilador -> linguagem alvo
+
+  Criação de um programa objeto executável:
+      A) Pré-Processador: operações simples
+      B) Compilador: gerar uma linguagem assembly
+      C) Montador: produz um código de máquina relocável 
+      D) Linker/Loader: reúne os arquivos executáveis na memória para execução
+  Bibliiotecas: 
+      1) Estáticas: Inseridas antes de utilizar um compilador (.h, import de jars)
+      2) Dinâmicas: São inseridas em uma das fases do compilador (.lib, .dll)
+  
+    1.6.1.1 Fases de um compilador
+        Analise Lexica, Leitura e Scanning: o programa é lido e agrupado em sequências
+                                            Lexemas - sequencia de caracteres que obedece um padrão
+                                            Token - um lexema já tratado
+        Analise Sintática: utiliza tokens para criar uma representação intermediária do tipo de árvore (mostra interação válida entre uma sequencia de tokens)
+        Analise Semantica: verificação de tipo, realiza a coerção
+        Geração de Código Intermediário: ser facilmente produzida e ser dacilmente traduzida para a máquina alvo
+        Otimização: produzir um código melhor e mais rápido
+                    Inibição de variáveis declaradas e não utilizadas;
+                    Otimização de Laços;
+                    Inibição de segmentos de código não relevantes.
+        Geração de Código Alvo: linguagem Assembly
+    *colocar foto da fase de um compilador
+PROVA V OU F:
+  Análise léxica é:
+    relação entre blocos do código F
+    primeira fase de compilação V
+    1.6.1.2 Compilação Cruzada
+        Tecnica usada para compilar programas de uma plataforma Y a partir de uma plataforma X, onde X é diferente de Y
+  1.6.2 Interpretadores
+    Um interpretador é um programa capaz de interpretar as instruções da linguagem fonte (alto nível), executando-as diretamente.
+- Traduz linha a linha
+- Não é totalmente traduzido antes de ser executado
+- Utilizam kapenas recursos de anáçise lexica, sintatica e semantica
+
+  1.6.3 Diferenças entre Compiladores e Interpretadores
+
+**escrever resumo do slide aqui
+
+  1.6.4 Compiladores Híbridos
+  O compilador tem o papel de converter o código fonte em um código bytecode, que é de baixo nível
+  Interpretados por uma máquina virtual
+
+
 
 
