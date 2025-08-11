@@ -54,7 +54,9 @@ OBS.: Ex. de Classes de Tokens:
 * SP (separadores)
 * OP (operador)
 
-<img width="1367" height="876" alt="image" src="https://github.com/user-attachments/assets/70454a5f-6975-48d2-b386-3097574f458a" />
+<img width="1080" height="688" alt="image" src="https://github.com/user-attachments/assets/0b6945af-0cee-4ce2-baf7-be6e0947d9b2" />
+
+
 
 
 
