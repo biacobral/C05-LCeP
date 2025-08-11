@@ -1,17 +1,17 @@
 (30/07/2025)
 
-1.1 Evolução das Linguagens de Programação
+# 1.1 Evolução das Linguagens de Programação
 
 - 5 gerações: baixo nível -> alto nível
 
-1.2 Razões para estudar Linguagens de Programação
+# 1.2 Razões para estudar Linguagens de Programação
 
   1. Capacidade de resolver soluções computacionais
   2. Habilidade para escolher as Linguagens de Programação
   3. Habilidade para aprender novas Linguagens de Programação
   4. Capacidade para projetar novas Linguagens de Programação
 
-1.3 Propriedades desejáveis das LP's
+# 1.3 Propriedades desejáveis das LP's
 
   1. Legibilidade
   2. Redigibilidade
@@ -78,7 +78,7 @@ Programa se comportar da mesma maneira independente do compilador, sistema opera
   - Implementação híbrida
   - Padronização da especificação da linguagem desde o seu projeto (pode prejudicar o desempenho)
 
-1.4 Paradigmas das LP's
+# 1.4 Paradigmas das LP's
 Conjunto de características que servem para categorizar um grupo de linguagens
 
 *copiar foto slide
@@ -104,7 +104,7 @@ Descrição do problema (o que deve ser feito)
 Suporta mais de um paradigma
 Geralmente usam frameworks
 
-1.5 Linguagens de Domínio Específico
+# 1.5 Linguagens de Domínio Específico
 
 (04/08/2025)
 1.6 Compiladores e Interpretadores
@@ -126,7 +126,7 @@ Existem dois métodos na tradução de códigos escritos em alto nível para a l
       1) Estáticas: Inseridas antes de utilizar um compilador (.h, import de jars)
       2) Dinâmicas: São inseridas em uma das fases do compilador (.lib, .dll)
   
-    1.6.1.1 Fases de um compilador
+  1.6.1.1 Fases de um compilador
         Analise Lexica, Leitura e Scanning: o programa é lido e agrupado em sequências
                                             Lexemas - sequencia de caracteres que obedece um padrão
                                             Token - um lexema já tratado
