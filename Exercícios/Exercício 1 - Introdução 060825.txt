@@ -1,0 +1,57 @@
+1. O que são os Paradigmas das LPs e como são classificados? Explique.
+
+Paradigma é utilizado para categorizar as linguagens da programação, sendo elas: 
+	- Imperativo: especificação de como um processo deve ser feito, sendo subdividido em Estruturado (blocos de comando), Orientado a Objetos (abstração de dados) e Concorrente (processos simultâneos).
+	- Declarativo: descrição do problema, sendo subdividido em Funcional (funções definidas) e Lógico (dedução e inferência)
+ 
+2. Quanto às gerações das LPs como elas podem ser classificadas? Cite um exemplo de linguagem pertencente a cada uma delas.
+
+Elas são classificadas desde 1ª geração até a 5ª, como exemplo podemos citar:
+
+	1ª: Linguagem binária (de máquina) - 0 e 1
+	2ª: Linguagem de baixo nível - Assembly
+	3ª: Linguagem de alto nível - C++
+	4ª: Linguagem de aplicação específica - SQL
+	5ª: Linguagem por lógica matemática - Prolog
+ 
+3. O que são Tradutores de Linguagens de Programação? Quais os tipos mais populares e suas principais diferenças?
+
+	Tradutores são métodos para traduzir a linguagem que utilizamos em alto nível para a linguagem de baixo nível (de máquina) para a execução do programa. Os mais populares são os Compiladores e Interpretadores; a maior diferença está na forma como traduzem o código: enquanto os compiladores criam um arquivo completo traduzido, os interpretadores traduzem linha a linha durante a execução.
+ 
+4. O que são bibliotecas("libraries" ou "libs")? Todas elas podem ser facilmente adicionadas ou removidas pelos desenvolvedores em seus códigos? Explique.
+
+	Bibliotecas são um auxílio que tem funções específicas a serem utilizadas. E existem dois tipos de biblioteca: 
+	- Estáticas: Inseridas antes de utilizar o compilador, sendo mais fáceis de serem inseridas e removidas, já que são compiladas junto com o código
+	- Dinâmicas: Inseridas em uma das fases do compilador, como elas dependem de seus sistemas operacionais, elas são mais difíceis e inserir e remover
+ 
+5. Que estratégias podem ser usadas pelos Compiladores ao detectarem possíveis erros durante o processo de Compilação? Explique.
+
+	Para isso é utilizado um tratamento de erros em que podemos abortar - parar a compilação - ou recuperar - tentar recuperar o processo ignorando algum erro.
+ 
+6. Em um processo de Compilação, quais são as fases geralmente envolvidas? Explique sucintamente o papel de cada uma delas.
+
+	1. Analise Lexica: o programa é agrupado em sequências de caracteres, gerando os lexemas (padrão de caracteres) e tokens (lexemas tratados)
+	2. Analise Sintática: utiliza tokens para criar uma representação intermediária do tipo de árvore (mostra interação válida entre uma sequencia de tokens)
+        3. Analise Semântica: verificação de tipo, realiza a coerção
+        4. Geração de Código Intermediário: ser facilmente produzida e ser facilmente traduzida para a máquina alvo
+        5. Otimização:  produzir um código melhor e mais rápido;
+                    	inibir variáveis declaradas e não utilizadas;
+                   	otimizar laços;
+                    	inibir segmentos de código não relevantes.
+        6. Geração de Código Alvo: "tradução" para linguagem Assembly
+ 
+7. O que você entende por Compilação Cruzada? Dê exemplos de dispositivos que podem/devem utilizar desta técnica para executar seus programas.
+
+	É um processo em que se compila o programa em um 'host' para um ambiente diferente, normalmente com sistemas operacionais distintos. Essa técnica é utilizada por dispositivos embarcados, por exemplo, já que o dispositivo não suporta a compilação pela limitação de recursos.  
+ 
+8. O que você entende por Compiladores Híbridos e qual o diferencial desta abordagem? Explique.
+
+	Em compiladores híbridos, o compilador ao invés de traduzir o código para a linguagem da máquina, ele traduz para uma máquina virtual a qual seria a hospedeira do compilador por meio de uma linguagem intermediária. Essa abordagem facilita a portabilidade, podendo ser utilizado em diferentes plataformas.
+ 
+9. Além do processo de tradução de LPs, cite duas outras áreas que a teoria de Compiladores pode ser utilizada para resolver problemas computacionais.
+
+	Geração de códigos para sistemas embarcados e otimização (análise estática)
+ 
+10. Existe a LP perfeita? Para ajudar a responder esta pergunta, analise as Propriedades Desejáveis das LPs e dê sua opinião.
+
+	Não, pois algumas propriedades entram em conflitos com outras, é necessário manter o equilíbrio ou priorizar alguma propriedade desejável. Por exemplo, melhorar a legibilidade pode atrapalhar a eficiência.
