@@ -101,3 +101,44 @@ I) `a?bc. = {bca, bcb, abca, ...}` → **a opcional, seguido de bc e mais um car
 J) `(a|bc)* = {ε, a, bc, abc, bca, aabc, bcbc, ...}` → **a ou bc infinitamente**  
 
 ---
+
+## 2.5. Extensões para as Expressões Regulares
+
+Extensões para enxutar o REGEX
+
+Ex.:
+Classe de Caracteres:
+	O operador [] busca uma ocorrência de um dos caracteres que se encontram no seu interior
+	[ab] = (a|b)
+	[abcde] = (a|b|c|d|e)
+	[a-z] = qualquer letra minúscula do alfabeto ('-' entre caracteres é intervalo)
+	[.] = caractere literal '.' (símbolos no final são os literais dele)
+	[^a-z] = exceto letras minúsculas ('^' no começo é exceto)
+	
+	O operador {m, n} podemos determinar a quantidade de caracteres mínimos e máximos das Strings. 
+	[] = {mínimo, máximo}
+	[a-d]{1, } = (a|b|c|d)+
+
+EXEMPLO 3:
+https://rubular.com/
+obs.: no rubular sempre colocar ^no início e $ no final
+A) -[1-9][0-9]* 
+B) ^[aeiou]+$
+C) [iI][nN][aA][tT][eE][lL] 
+D) [a-zA-Z0-9]{3,15}
+E) [0-9]{5}-[0-9]{3}
+F) [a-zA-Z0-9]{3,15}@(gmail|yahoo)[.]com
+G) (([0-1][0-9])|([2][0-3]))[:][0-5][0-9]
+
+EXEMPLO 4:
+^([0]|[1-9][0-9]*)[.]?[0-9]*[E]?([-][1-9]|[0-9])*?$
+	
+
+
+
+
+
+
+
+
+
