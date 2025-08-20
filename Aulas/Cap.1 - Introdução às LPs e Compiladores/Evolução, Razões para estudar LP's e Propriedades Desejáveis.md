@@ -119,7 +119,7 @@ Capacidade do programa de se comportar da mesma forma **independente do compilad
 ## 1.4 Paradigmas das Linguagens de Programação
 Conjunto de características que categorizam um grupo de linguagens.  
 
-> *(Inserir imagem do slide aqui)*
+<img width="448" height="198" alt="image" src="https://github.com/user-attachments/assets/eafb2b98-86b4-4b02-8720-174c6eb30144" />
 
 ---
 
@@ -169,7 +169,7 @@ Um compilador recebe como entrada um programa em uma linguagem de programação 
 ```mermaid
 flowchart LR
     A[Linguagem Fonte] --> B[Compilador] --> C[Linguagem Alvo]
-
+```
   
 # 1.6 Compiladores e Interpretadores
 
@@ -236,6 +236,7 @@ Um **interpretador** é um programa capaz de interpretar instruções da linguag
 
 📌 **Resumo:**  
 Compiladores traduzem tudo antes de rodar, enquanto interpretadores executam diretamente cada instrução.  
+<img width="901" height="543" alt="image" src="https://github.com/user-attachments/assets/2cd28e0a-29e3-4673-8baa-080b866b7503" />
 
 ---
 
