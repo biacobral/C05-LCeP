@@ -1,0 +1,32 @@
+Analise Léxica Parte 1 Python
+Exercícios propostos
+import re
+
+txt = "Viver é acalentar sonhos e esperanças, fazendo da fé a nossa inspiração maior. É buscar nas pequenas coisas, um grande motivo para ser feliz"
+
+x1 = re.search("sonhos", txt)
+if x1:
+    print("Match para 'sonhos' encontrado")
+else:
+    print("Match para 'sonhos' não encontrado")
+    
+for x2 in re.finditer("[a-zA-Zç]*as", txt):
+    print(x2.group())
+    
+x3 = re.sub("maior|grande", "surreal", txt)
+print(x3)
+
+for x4 in re.finditer("inspiração", txt):
+    print(x4.span())
+
+for x5 in re.finditer("[a-zA-zç]{9}+", txt):
+    print(x5.group())
+    
+x6 = re.split(",|[.]", txt)
+print(x6)
+
+for x7 in re.finditer("[A-Za-zç]*[Éé][A-Za-zç]*", txt):
+    print(x7.group())
+    
+x8 = re.split("\s", txt)
+print(len(x8))
