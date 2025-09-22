@@ -1,0 +1,5 @@
+# CAPÍTULO 2 (Parte 3)
+
+2.9. Autômatos Finitos Não Determinísticos
+
+obs.: prova-> representação gráfica A={enek}
